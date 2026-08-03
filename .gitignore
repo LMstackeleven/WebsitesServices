@@ -1,0 +1,16 @@
+# Large source assets (not needed to run the site)
+*.zip
+*.pdf
+Branding (Brand guidelines, colors, typography)_/
+extracted_text_from_*.md
+
+# Tooling / editor / skill caches
+.claude/
+.agents/
+.impeccable/
+skills-lock.json
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini

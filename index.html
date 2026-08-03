@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StackEleven - Websites That Fill Your Courts</title>
+  <meta name="description" content="StackEleven designs and builds the complete digital growth engine for pickleball and padel clubs, from first click to court booking." />
+  <link rel="icon" type="image/png" href="assets/mark-blue.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!--
+  DIRECTION CONTRACT (comp-pinned; molded to user-approved screenshots)
+  THESIS: A club's marketing shown as a live scoreboard of its own real ad work — the studio's
+    actual pickleball/padel creatives float as proof, wrapped in athletic-tech instrumentation.
+    Refuses the generic light SaaS hero of one abstract illustration + gradient blob.
+  OWN-WORLD: Light athletic-tech — white / slate-50 grounds, navy #1b293b ink, one electric blue
+    #2563bb for action + data. Archivo (bold grotesque) headings; JetBrains Mono for nav, buttons,
+    labels, prices — the technical voice. Real StackEleven ad creatives as collage tiles.
+  STORY: Club owner sees real campaigns + tracked ROI, believes StackEleven runs the whole funnel,
+    books a discovery call.
+  FIRST VIEWPORT: Left — big navy/blue headline + sub + mono CTA. Right — floating collage of a
+    live-metrics chart, an IG-framed player photo, a real tournament ad, a $ badge, reviews, a
+    "Court Booked" pill. Primary action sits top-left of the fold.
+  FORM: Athletic-tech performance board translated to a marketing landing page; comp-pinned, rank 1 of 1.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="StackEleven home">
+        <img class="brand-mark" src="assets/mark-blue.png" alt="" width="26" height="36" />
+        <span class="brand-word">Stack<span class="brand-word-alt">Eleven</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#top" class="is-active">Home</a>
+        <a href="https://www.stackeleven.com/blog" target="_blank" rel="noopener">Blog</a>
+        <a href="https://www.stackeleven.com/contact" target="_blank" rel="noopener">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-dark btn-sm" href="https://www.stackeleven.com/intro" target="_blank" rel="noopener">Schedule a Call</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#top">Home</a>
+      <a href="https://www.stackeleven.com/blog" target="_blank" rel="noopener">Blog</a>
+      <a href="https://www.stackeleven.com/contact" target="_blank" rel="noopener">Contact</a>
+      <a class="btn btn-dark" href="https://www.stackeleven.com/intro" target="_blank" rel="noopener">Schedule a Call</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <h1 class="hero-title">Websites That Fill Your Courts. <span class="accent">Built for Performance.</span></h1>
+          <p class="hero-sub">We build the complete growth engine for pickleball and padel clubs: site, booking, ads, and CRM, so your courts stay full.</p>
+          <a class="btn btn-dark btn-lg" href="https://www.stackeleven.com/intro" target="_blank" rel="noopener">Book a Discovery Call
+            <span class="btn-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <p class="hero-reassure"><span class="tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>US clubs: $0 upfront.</b> We only win when your courts fill.</span></p>
+        </div>
+
+        <!-- Carousel of real StackEleven client work (websites + campaign creatives) -->
+        <div class="carousel reveal" aria-roledescription="carousel" aria-label="StackEleven client work">
+          <div class="carousel-viewport">
+            <ul class="carousel-track">
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="1 of 7">
+                <img src="assets/work-golden.png" alt="Golden Pickle indoor pickleball club website" width="900" height="900" />
+                <span class="slide-cap">Golden Pickle · Club Website</span>
+              </li>
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="2 of 7">
+                <img src="assets/work-premier.png" alt="Premier Pickleball Club website on mobile" width="454" height="900" loading="lazy" />
+                <span class="slide-cap">Premier Pickleball · Club Website</span>
+              </li>
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="3 of 7">
+                <img src="assets/work-summer.png" alt="Sizzling Summer Showdown campaign site on a laptop" width="567" height="753" loading="lazy" />
+                <span class="slide-cap">Sizzling Summer · Campaign Site</span>
+              </li>
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="4 of 7">
+                <img src="assets/work-events.png" alt="Club events and booking page on a tablet" width="900" height="474" loading="lazy" />
+                <span class="slide-cap">Club Events · Booking Page</span>
+              </li>
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="5 of 7">
+                <img src="assets/work-crm.png" alt="GrowMyClub CRM campaign builder on mobile" width="445" height="900" loading="lazy" />
+                <span class="slide-cap">GrowMyClub · CRM</span>
+              </li>
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="6 of 7">
+                <img src="assets/hero-players.jpg" alt="Gotham Pickleball tournament ad with players on court" width="656" height="820" loading="lazy" />
+                <span class="slide-cap">Gotham Pickleball · Tournament Ad</span>
+              </li>
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="7 of 7">
+                <img src="assets/ad-tournament.jpg" alt="Fixed Partner Tournament ad creative" width="656" height="820" loading="lazy" />
+                <span class="slide-cap">Fixed Partner · Tournament Ad</span>
+              </li>
+            </ul>
+          </div>
+          <button class="car-btn car-prev" aria-label="Previous work">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+          </button>
+          <button class="car-btn car-next" aria-label="Next work">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+          <div class="car-dots" role="tablist" aria-label="Choose slide"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRICING ================= -->
+    <section class="pricing" id="pricing">
+      <div class="wrap">
+        <header class="sec-head center reveal">
+          <h2 class="sec-title">Flexible Growth Models</h2>
+          <p class="sec-lead">Pick the model that fits your market. Both are built to pay for themselves in booked courts.</p>
+        </header>
+        <div class="plans">
+          <article class="plan reveal">
+            <span class="plan-idx" aria-hidden="true">01</span>
+            <span class="plan-region">US</span>
+            <h3 class="plan-name">Free Agency Model</h3>
+            <div class="plan-price"><span class="amt">$0</span><span class="per">Upfront</span></div>
+            <p class="plan-desc">We build the whole engine free and earn as your bookings grow. Zero risk to start, fully aligned.</p>
+            <ul class="plan-list">
+              <li>Zero initial build cost</li>
+              <li>Full funnel attribution tracking</li>
+              <li>Continuous conversion optimization</li>
+            </ul>
+            <a class="btn btn-primary btn-block plan-cta" href="https://www.stackeleven.com/intro" target="_blank" rel="noopener">Start at $0 Down</a>
+          </article>
+
+          <article class="plan reveal">
+            <span class="plan-idx" aria-hidden="true">02</span>
+            <span class="plan-region">Europe</span>
+            <h3 class="plan-name">Entry Model</h3>
+            <div class="plan-price"><span class="per pre">Starting at</span><span class="amt">~$1,000</span></div>
+            <p class="plan-desc">A custom high-performance build with booking and SEO ready to compete from day one.</p>
+            <ul class="plan-list">
+              <li>Custom high-performance build</li>
+              <li>Booking platform integration</li>
+              <li>Foundational SEO setup</li>
+            </ul>
+            <a class="btn btn-outline btn-block plan-cta" href="https://www.stackeleven.com/intro" target="_blank" rel="noopener">Request a Build Quote</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PORTFOLIO / BUILT WEBSITES ================= -->
+    <section class="portfolio" id="work">
+      <div class="wrap">
+        <header class="sec-head center reveal">
+          <h2 class="sec-title">Websites We've Built for Clubs Like Yours</h2>
+          <p class="sec-lead">Every site is custom-designed, integrated with your booking platform, and optimized to convert visitors into paying members.</p>
+        </header>
+        <div class="work-grid">
+          <a class="work-card reveal" href="https://www.pickleball-junction.com/" target="_blank" rel="noopener">
+            <div class="work-bar"><span></span><span></span><span></span><em>pickleball-junction.com</em></div>
+            <div class="work-shot"><img src="assets/portfolio/junction.jpg" alt="Pickleball Junction club website built by StackEleven" width="1000" height="625" loading="lazy" /></div>
+            <div class="work-foot"><span class="work-name">Pickleball Junction</span><span class="work-visit">Visit site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+          <a class="work-card reveal" href="https://gotham-pickleball.com" target="_blank" rel="noopener">
+            <div class="work-bar"><span></span><span></span><span></span><em>gotham-pickleball.com</em></div>
+            <div class="work-shot"><img src="assets/portfolio/gotham.jpg" alt="Gotham Pickleball club website built by StackEleven" width="1000" height="625" loading="lazy" /></div>
+            <div class="work-foot"><span class="work-name">Gotham Pickleball</span><span class="work-visit">Visit site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+          <a class="work-card reveal" href="https://playatpremier.com" target="_blank" rel="noopener">
+            <div class="work-bar"><span></span><span></span><span></span><em>playatpremier.com</em></div>
+            <div class="work-shot"><img src="assets/portfolio/premier.jpg" alt="Premier Pickleball Club website built by StackEleven" width="1000" height="625" loading="lazy" /></div>
+            <div class="work-foot"><span class="work-name">Premier Pickleball Club</span><span class="work-visit">Visit site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+          <a class="work-card reveal" href="https://www.gamepointcourts.com/" target="_blank" rel="noopener">
+            <div class="work-bar"><span></span><span></span><span></span><em>gamepointcourts.com</em></div>
+            <div class="work-shot"><img src="assets/portfolio/gamepoint.jpg" alt="GamePoint Pickleball club website built by StackEleven" width="1000" height="625" loading="lazy" /></div>
+            <div class="work-foot"><span class="work-name">GamePoint Pickleball</span><span class="work-visit">Visit site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+          <a class="work-card reveal" href="https://eleveno.com" target="_blank" rel="noopener">
+            <div class="work-bar"><span></span><span></span><span></span><em>eleveno.com</em></div>
+            <div class="work-shot"><img src="assets/portfolio/eleveno.jpg" alt="ELEVENO club website built by StackEleven" width="1000" height="625" loading="lazy" /></div>
+            <div class="work-foot"><span class="work-name">ELEVENO</span><span class="work-visit">Visit site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AGENCY / PARTNERS (light band) ================= -->
+    <section class="agency" id="agency">
+      <div class="wrap agency-inner reveal">
+        <h2 class="sec-title agency-title">The&nbsp;#1 Marketing Agency for Pickleball &amp; Padel Clubs</h2>
+        <p class="agency-sub">We design and build high-performance websites that drive traffic, engagement, and court bookings for clubs ready to scale.</p>
+        <p class="agency-friends">Some friends we've made in the process.</p>
+      </div>
+      <div class="logo-rows" aria-label="Clubs and partners we work with">
+        <div class="logo-row">
+          <div class="logo-rowtrack rtl">
+            <span class="logo-chip"><img src="assets/logos/client-01.svg" alt="Portside Pickle" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-02.svg" alt="Pickleville CT" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-03.svg" alt="Pickleball365" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-04.webp" alt="The PutAway Severna Park" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-05.svg" alt="PickleBOS" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-06.svg" alt="Gotham Pickleball" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-07.svg" alt="Pickleball club" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-08.svg" alt="Dill Dinkers Pickleball" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-09.svg" alt="pb Club" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-10.svg" alt="Rockland Pickleball Club" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-11.svg" alt="Premier Pickleball Club" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-12.svg" alt="GamePoint Pickleball" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-01.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-02.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-03.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-04.webp" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-05.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-06.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-07.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-08.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-09.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-10.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-11.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-12.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-01.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-02.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-03.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-04.webp" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-05.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-06.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-07.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-08.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-09.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-10.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-11.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-12.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-01.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-02.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-03.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-04.webp" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-05.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-06.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-07.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-08.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-09.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-10.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-11.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-12.svg" alt="" loading="lazy" /></span>
+          </div>
+        </div>
+        <div class="logo-row">
+          <div class="logo-rowtrack ltr">
+            <span class="logo-chip"><img src="assets/logos/client-13.svg" alt="Forum7" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-14.svg" alt="PAC Pickleball Athletic Club" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-15.svg" alt="Velto Pickleball Club" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-16.svg" alt="Pickleball Junction" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-17.svg" alt="Dallas Indoor Pickleball" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-18.svg" alt="Pickleball Manager" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-19.svg" alt="RacketPro" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-20.svg" alt="Johns Design &amp; Consulting" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-21.svg" alt="ip&amp;p" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-22.svg" alt="150 Health" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-23.svg" alt="Village Glen Tennis &amp; Pickleball" loading="lazy" /></span><span class="logo-chip"><img src="assets/logos/client-24.svg" alt="Tennis Club of Rochester" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-13.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-14.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-15.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-16.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-17.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-18.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-19.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-20.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-21.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-22.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-23.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-24.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-13.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-14.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-15.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-16.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-17.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-18.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-19.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-20.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-21.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-22.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-23.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-24.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-13.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-14.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-15.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-16.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-17.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-18.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-19.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-20.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-21.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-22.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-23.svg" alt="" loading="lazy" /></span><span class="logo-chip" aria-hidden="true"><img src="assets/logos/client-24.svg" alt="" loading="lazy" /></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="steps" id="how">
+      <div class="wrap">
+        <header class="sec-head center reveal">
+          <h2 class="sec-title">From first call to full courts</h2>
+          <p class="sec-lead">A simple path, built to prove itself before you spend.</p>
+        </header>
+        <div class="step-grid">
+          <article class="step reveal">
+            <span class="step-num"></span>
+            <div class="step-line"></div>
+            <h3>Discovery call</h3>
+            <p>We map your courts, your local market, and your goals. Twenty minutes, no cost.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num"></span>
+            <div class="step-line"></div>
+            <h3>We build &amp; launch</h3>
+            <p>Site, booking, ads, and CRM, live and integrated. US clubs start at $0 upfront.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num"></span>
+            <div class="step-line"></div>
+            <h3>You fill courts</h3>
+            <p>We optimize on tracked ROI, month over month, turning ad spend into booked courts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOCIAL PROOF ================= -->
+    <section class="social" id="social">
+      <div class="wrap social-grid">
+        <div class="proof-collage reveal" aria-label="StackEleven campaign results">
+          <div class="pc-tile pc-promo">
+            <span class="promo-off">25% OFF</span>
+            <span class="promo-line">All court reservations</span>
+            <span class="promo-date">Dec. 23<sup>rd</sup>–27<sup>th</sup></span>
+            <span class="promo-code">Promo code <b>XMAS</b></span>
+          </div>
+          <div class="pc-tile pc-imp">
+            <span class="imp-num" data-count="1" data-suffix="M+">0</span>
+            <span class="imp-label">Impressions delivered daily</span>
+          </div>
+          <div class="pc-tile pc-ads">
+            <span class="ads-badge">ADS</span>
+            <span class="ads-l1"></span><span class="ads-l2"></span>
+          </div>
+          <img class="pc-tile pc-img" src="assets/ad-hiltonhead.jpg" alt="Dill Dinkers Hilton Head pickleball membership campaign" loading="lazy" />
+          <img class="pc-tile pc-img2" src="assets/ad-sizzler.jpg" alt="Dill Dinkers Summer Sizzler court-fee promotion" loading="lazy" />
+          <div class="pc-float pc-chart">
+            <div class="mini-bars"><i style="--h:40%"></i><i style="--h:60%"></i><i style="--h:52%"></i><i style="--h:78%"></i><i style="--h:92%"></i></div>
+            <svg viewBox="0 0 40 24" class="mini-arrow" aria-hidden="true"><path d="M3 20L16 10l8 5L37 4"/><path d="M30 4h7v7"/></svg>
+          </div>
+          <div class="pc-float pc-rev">
+            <div class="rv-avatars"><span></span><span></span><span></span></div>
+            <span class="rv-stars">★★★★★</span>
+          </div>
+        </div>
+
+        <div class="social-copy reveal">
+          <h2 class="social-title">Campaigns built to fill courts.</h2>
+          <blockquote class="social-quote">From membership drives to tournament promos, we run the creative that gets players off the fence and onto your courts.</blockquote>
+          <a class="btn btn-outline btn-lg" href="https://www.stackeleven.com/blog" target="_blank" rel="noopener">View Case Studies
+            <span class="btn-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ================= FINAL CTA (blue band) ================= -->
+    <section class="final" id="book">
+      <div class="court-lines" aria-hidden="true"></div>
+      <div class="wrap final-inner reveal">
+        <h2 class="final-title">Let's build the website your club deserves.</h2>
+        <p class="final-sub">Book a free 20-minute discovery call. We'll review your club and show you exactly how a StackEleven-built website turns visitors into booked courts and members.</p>
+        <a class="btn btn-white btn-lg" href="https://www.stackeleven.com/intro" target="_blank" rel="noopener">Book a Discovery Call
+          <span class="btn-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <p class="final-note">Free consultation, no commitment. US clubs start at $0 upfront.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="StackEleven home">
+          <img class="brand-mark" src="assets/mark-white.png" alt="" width="26" height="36" />
+          <span class="brand-word">Stack<span class="brand-word-alt">Eleven</span></span>
+        </a>
+        <p class="footer-copy">&copy; 2026 StackEleven. All rights reserved.<br>Athletic-Tech Marketing for the Racquet Sports Industry.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="https://www.stackeleven.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://www.stackeleven.com/terms" target="_blank" rel="noopener">Terms of Service</a>
+        <a href="https://www.stackeleven.com/blog" target="_blank" rel="noopener">Case Studies</a>
+        <a href="mailto:info@stackeleven.com">Founder Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
