@@ -94,7 +94,7 @@
     var dotsWrap = root.querySelector(".car-dots");
     var prev = root.querySelector(".car-prev");
     var next = root.querySelector(".car-next");
-    var i = 0, timer = null, DELAY = 1000;
+    var i = 0, timer = null, DELAY = 2000;
 
     var dots = slides.map(function (s, n) {
       var b = document.createElement("button");
@@ -107,9 +107,11 @@
 
     function go(n) {
       i = (n + slides.length) % slides.length;
-      track.style.transform = "translateX(" + (-i * 100) + "%)";
+      slides.forEach(function (s, k) {
+        s.classList.toggle("is-active", k === i);
+        s.setAttribute("aria-hidden", k === i ? "false" : "true");
+      });
       dots.forEach(function (d, k) { d.setAttribute("aria-selected", k === i ? "true" : "false"); });
-      slides.forEach(function (s, k) { s.setAttribute("aria-hidden", k === i ? "false" : "true"); });
     }
     function start() { if (timer) return; timer = setInterval(function () { go(i + 1); }, DELAY); }
     function stop() { if (timer) { clearInterval(timer); timer = null; } }
