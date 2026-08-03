@@ -94,7 +94,7 @@
     var dotsWrap = root.querySelector(".car-dots");
     var prev = root.querySelector(".car-prev");
     var next = root.querySelector(".car-next");
-    var i = 0, timer = null, DELAY = 2000;
+    var i = 0, timer = null, DELAY = 3500;
 
     var dots = slides.map(function (s, n) {
       var b = document.createElement("button");
