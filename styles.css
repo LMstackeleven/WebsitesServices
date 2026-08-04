@@ -139,6 +139,7 @@ ul { margin: 0; padding: 0; list-style: none; }
    Bottom padding reserves room for the caption badge so it never overlaps the device. */
 .slide { position: absolute; inset: 0; padding: 22px 24px 58px; opacity: 0; filter: blur(14px); transition: opacity .7s var(--ease), filter .7s var(--ease); pointer-events: none; }
 .slide.is-active { opacity: 1; filter: blur(0); pointer-events: auto; }
+.slide picture, .work-shot picture { display: contents; }
 .slide img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; filter: drop-shadow(0 24px 40px rgba(27,41,59,.22)); }
 .slide-cap { position: absolute; left: 18px; bottom: 16px; font-family: var(--mono); font-size: .66rem; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; color: #fff; background: rgba(19,31,48,.74); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); padding: 7px 13px; border-radius: 20px; }
 

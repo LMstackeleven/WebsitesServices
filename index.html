@@ -5,11 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>StackEleven - Websites That Fill Your Courts</title>
   <meta name="description" content="StackEleven designs and builds the complete digital growth engine for pickleball and padel clubs, from first click to court booking." />
-  <link rel="icon" type="image/png" href="assets/mark-blue.png" />
+  <link rel="canonical" href="https://lmstackeleven.github.io/WebsitesServices/" />
+  <link rel="icon" type="image/png" href="assets/favicon-64.png" />
+
+  <!-- Open Graph / Twitter (shared by DM) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="StackEleven" />
+  <meta property="og:title" content="StackEleven - Websites That Fill Your Courts" />
+  <meta property="og:description" content="Web design for pickleball and padel clubs: site, booking, ads, and CRM, so your courts stay full." />
+  <meta property="og:url" content="https://lmstackeleven.github.io/WebsitesServices/" />
+  <meta property="og:image" content="https://lmstackeleven.github.io/WebsitesServices/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="StackEleven - Websites That Fill Your Courts" />
+  <meta name="twitter:description" content="Web design for pickleball and padel clubs: site, booking, ads, and CRM, so your courts stay full." />
+  <meta name="twitter:image" content="https://lmstackeleven.github.io/WebsitesServices/assets/og-image.png" />
+
+  <!-- Prioritise the LCP image (first work slide) -->
+  <link rel="preload" as="image" href="assets/work-golden.webp" type="image/webp" fetchpriority="high" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://lmstackeleven.github.io/WebsitesServices/#business",
+        "name": "StackEleven",
+        "url": "https://lmstackeleven.github.io/WebsitesServices/",
+        "image": "https://lmstackeleven.github.io/WebsitesServices/assets/og-image.png",
+        "logo": "https://lmstackeleven.github.io/WebsitesServices/assets/mark-blue.png",
+        "description": "Web design studio for pickleball and padel clubs: websites, booking, ads, and CRM.",
+        "email": "info@stackeleven.com",
+        "sameAs": ["https://www.stackeleven.com"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://lmstackeleven.github.io/WebsitesServices/#website",
+        "url": "https://lmstackeleven.github.io/WebsitesServices/",
+        "name": "StackEleven - Websites That Fill Your Courts",
+        "publisher": { "@id": "https://lmstackeleven.github.io/WebsitesServices/#business" }
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Web design for pickleball and padel clubs",
+        "provider": { "@id": "https://lmstackeleven.github.io/WebsitesServices/#business" },
+        "areaServed": "US",
+        "url": "https://lmstackeleven.github.io/WebsitesServices/"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <!--
@@ -33,7 +85,7 @@
   <header class="site-header" id="top">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="StackEleven home">
-        <img class="brand-mark" src="assets/mark-blue.png" alt="" width="26" height="36" />
+        <img class="brand-mark" src="assets/mark-blue.webp" alt="" width="26" height="36" />
         <span class="brand-word">Stack<span class="brand-word-alt">Eleven</span></span>
       </a>
       <nav class="nav" aria-label="Primary">
@@ -72,36 +124,54 @@
         <!-- Carousel of real StackEleven client work (websites + campaign creatives) -->
         <div class="carousel reveal" aria-roledescription="carousel" aria-label="StackEleven client work">
           <div class="carousel-viewport">
-            <ul class="carousel-track">
-              <li class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 7">
-                <img src="assets/work-golden.png" alt="Golden Pickle indoor pickleball club website" width="900" height="900" />
+            <div class="carousel-track" role="list">
+              <div class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 7">
+                <img src="assets/work-golden.webp" alt="Golden Pickle indoor pickleball club website" width="900" height="900" fetchpriority="high" />
                 <span class="slide-cap">Golden Pickle · Club Website</span>
-              </li>
-              <li class="slide" role="group" aria-roledescription="slide" aria-label="2 of 7">
-                <img src="assets/work-premier.png" alt="Premier Pickleball Club website on mobile" width="454" height="900" loading="lazy" />
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 7">
+                <picture>
+                  <source srcset="assets/work-premier.webp" type="image/webp" />
+                  <img src="assets/work-premier.png" alt="Premier Pickleball Club website on mobile" width="454" height="900" loading="lazy" />
+                </picture>
                 <span class="slide-cap">Premier Pickleball · Club Website</span>
-              </li>
-              <li class="slide" role="group" aria-roledescription="slide" aria-label="3 of 7">
-                <img src="assets/work-summer.png" alt="Sizzling Summer Showdown campaign site on a laptop" width="567" height="753" loading="lazy" />
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 7">
+                <picture>
+                  <source srcset="assets/work-summer.webp" type="image/webp" />
+                  <img src="assets/work-summer.png" alt="Sizzling Summer Showdown campaign site on a laptop" width="567" height="753" loading="lazy" />
+                </picture>
                 <span class="slide-cap">Sizzling Summer · Campaign Site</span>
-              </li>
-              <li class="slide" role="group" aria-roledescription="slide" aria-label="4 of 7">
-                <img src="assets/work-events.png" alt="Club events and booking page on a tablet" width="900" height="474" loading="lazy" />
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 7">
+                <picture>
+                  <source srcset="assets/work-events.webp" type="image/webp" />
+                  <img src="assets/work-events.png" alt="Club events and booking page on a tablet" width="900" height="474" loading="lazy" />
+                </picture>
                 <span class="slide-cap">Club Events · Booking Page</span>
-              </li>
-              <li class="slide" role="group" aria-roledescription="slide" aria-label="5 of 7">
-                <img src="assets/work-crm.png" alt="GrowMyClub CRM campaign builder on mobile" width="445" height="900" loading="lazy" />
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="5 of 7">
+                <picture>
+                  <source srcset="assets/work-crm.webp" type="image/webp" />
+                  <img src="assets/work-crm.png" alt="GrowMyClub CRM campaign builder on mobile" width="445" height="900" loading="lazy" />
+                </picture>
                 <span class="slide-cap">GrowMyClub · CRM</span>
-              </li>
-              <li class="slide" role="group" aria-roledescription="slide" aria-label="6 of 7">
-                <img src="assets/hero-players.jpg" alt="Gotham Pickleball tournament ad with players on court" width="656" height="820" loading="lazy" />
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="6 of 7">
+                <picture>
+                  <source srcset="assets/hero-players.webp" type="image/webp" />
+                  <img src="assets/hero-players.jpg" alt="Gotham Pickleball tournament ad with players on court" width="656" height="820" loading="lazy" />
+                </picture>
                 <span class="slide-cap">Gotham Pickleball · Tournament Ad</span>
-              </li>
-              <li class="slide" role="group" aria-roledescription="slide" aria-label="7 of 7">
-                <img src="assets/ad-tournament.jpg" alt="Fixed Partner Tournament ad creative" width="656" height="820" loading="lazy" />
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="7 of 7">
+                <picture>
+                  <source srcset="assets/ad-tournament.webp" type="image/webp" />
+                  <img src="assets/ad-tournament.jpg" alt="Fixed Partner Tournament ad creative" width="656" height="820" loading="lazy" />
+                </picture>
                 <span class="slide-cap">Fixed Partner · Tournament Ad</span>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <button class="car-btn car-prev" aria-label="Previous work">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
@@ -163,27 +233,27 @@
         <div class="work-grid">
           <a class="work-card reveal" href="https://www.pickleball-junction.com/" target="_blank" rel="noopener">
             <div class="work-bar"><span></span><span></span><span></span><em>pickleball-junction.com</em></div>
-            <div class="work-shot"><img src="assets/portfolio/junction.jpg" alt="Pickleball Junction club website built by StackEleven" width="1000" height="625" loading="lazy" /></div>
+            <div class="work-shot"><picture><source srcset="assets/portfolio/junction.webp" type="image/webp" /><img src="assets/portfolio/junction.jpg" alt="Pickleball Junction club website built by StackEleven" width="1000" height="625" loading="lazy" /></picture></div>
             <div class="work-foot"><span class="work-name">Pickleball Junction</span><span class="work-visit">Visit site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
           </a>
           <a class="work-card reveal" href="https://gotham-pickleball.com" target="_blank" rel="noopener">
             <div class="work-bar"><span></span><span></span><span></span><em>gotham-pickleball.com</em></div>
-            <div class="work-shot"><img src="assets/portfolio/gotham.jpg" alt="Gotham Pickleball club website built by StackEleven" width="1000" height="625" loading="lazy" /></div>
+            <div class="work-shot"><picture><source srcset="assets/portfolio/gotham.webp" type="image/webp" /><img src="assets/portfolio/gotham.jpg" alt="Gotham Pickleball club website built by StackEleven" width="1000" height="625" loading="lazy" /></picture></div>
             <div class="work-foot"><span class="work-name">Gotham Pickleball</span><span class="work-visit">Visit site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
           </a>
           <a class="work-card reveal" href="https://playatpremier.com" target="_blank" rel="noopener">
             <div class="work-bar"><span></span><span></span><span></span><em>playatpremier.com</em></div>
-            <div class="work-shot"><img src="assets/portfolio/premier.jpg" alt="Premier Pickleball Club website built by StackEleven" width="1000" height="625" loading="lazy" /></div>
+            <div class="work-shot"><picture><source srcset="assets/portfolio/premier.webp" type="image/webp" /><img src="assets/portfolio/premier.jpg" alt="Premier Pickleball Club website built by StackEleven" width="1000" height="625" loading="lazy" /></picture></div>
             <div class="work-foot"><span class="work-name">Premier Pickleball Club</span><span class="work-visit">Visit site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
           </a>
           <a class="work-card reveal" href="https://www.gamepointcourts.com/" target="_blank" rel="noopener">
             <div class="work-bar"><span></span><span></span><span></span><em>gamepointcourts.com</em></div>
-            <div class="work-shot"><img src="assets/portfolio/gamepoint.jpg" alt="GamePoint Pickleball club website built by StackEleven" width="1000" height="625" loading="lazy" /></div>
+            <div class="work-shot"><picture><source srcset="assets/portfolio/gamepoint.webp" type="image/webp" /><img src="assets/portfolio/gamepoint.jpg" alt="GamePoint Pickleball club website built by StackEleven" width="1000" height="625" loading="lazy" /></picture></div>
             <div class="work-foot"><span class="work-name">GamePoint Pickleball</span><span class="work-visit">Visit site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
           </a>
           <a class="work-card reveal" href="https://eleveno.com" target="_blank" rel="noopener">
             <div class="work-bar"><span></span><span></span><span></span><em>eleveno.com</em></div>
-            <div class="work-shot"><img src="assets/portfolio/eleveno.jpg" alt="ELEVENO club website built by StackEleven" width="1000" height="625" loading="lazy" /></div>
+            <div class="work-shot"><picture><source srcset="assets/portfolio/eleveno.webp" type="image/webp" /><img src="assets/portfolio/eleveno.jpg" alt="ELEVENO club website built by StackEleven" width="1000" height="625" loading="lazy" /></picture></div>
             <div class="work-foot"><span class="work-name">ELEVENO</span><span class="work-visit">Visit site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
           </a>
         </div>
@@ -259,8 +329,8 @@
             <span class="ads-badge">ADS</span>
             <span class="ads-l1"></span><span class="ads-l2"></span>
           </div>
-          <img class="pc-tile pc-img" src="assets/ad-hiltonhead.jpg" alt="Dill Dinkers Hilton Head pickleball membership campaign" loading="lazy" />
-          <img class="pc-tile pc-img2" src="assets/ad-sizzler.jpg" alt="Dill Dinkers Summer Sizzler court-fee promotion" loading="lazy" />
+          <img class="pc-tile pc-img" src="assets/ad-hiltonhead.webp" alt="Dill Dinkers Hilton Head pickleball membership campaign" loading="lazy" />
+          <img class="pc-tile pc-img2" src="assets/ad-sizzler.webp" alt="Dill Dinkers Summer Sizzler court-fee promotion" loading="lazy" />
           <div class="pc-float pc-chart">
             <div class="mini-bars"><i style="--h:40%"></i><i style="--h:60%"></i><i style="--h:52%"></i><i style="--h:78%"></i><i style="--h:92%"></i></div>
             <svg viewBox="0 0 40 24" class="mini-arrow" aria-hidden="true"><path d="M3 20L16 10l8 5L37 4"/><path d="M30 4h7v7"/></svg>
@@ -302,7 +372,7 @@
     <div class="wrap footer-inner">
       <div class="footer-brand">
         <a class="brand" href="#top" aria-label="StackEleven home">
-          <img class="brand-mark" src="assets/mark-white.png" alt="" width="26" height="36" />
+          <img class="brand-mark" src="assets/mark-white.webp" alt="" width="26" height="36" />
           <span class="brand-word">Stack<span class="brand-word-alt">Eleven</span></span>
         </a>
         <p class="footer-copy">&copy; 2026 StackEleven. All rights reserved.<br>Athletic-Tech Marketing for the Racquet Sports Industry.</p>

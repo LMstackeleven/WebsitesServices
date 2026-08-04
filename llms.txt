@@ -1,0 +1,30 @@
+# StackEleven
+
+> Web design studio building websites, booking, ads, and CRM for pickleball and padel clubs — so their courts stay full.
+
+StackEleven designs and builds the complete digital growth engine for racket-sports clubs. The studio pairs website design with booking integration, paid campaigns, and CRM, and knows the racket-sports market (memberships, clinics, tournaments, camps).
+
+## Services
+- Custom high-performance club websites
+- Booking platform integration
+- Paid ad campaigns (membership drives, tournament promos)
+- CRM and funnel attribution
+
+## Engagement models
+- US clubs: Free Agency Model — $0 upfront, the studio earns as bookings grow.
+- Europe: Entry Model — custom build starting at ~$1,000.
+
+## Portfolio (live club sites built by StackEleven)
+- Pickleball Junction — https://www.pickleball-junction.com/
+- Gotham Pickleball — https://gotham-pickleball.com
+- Premier Pickleball Club — https://playatpremier.com
+- GamePoint Pickleball — https://www.gamepointcourts.com/
+- ELEVENO — https://eleveno.com
+
+## Contact
+- Email: info@stackeleven.com
+- Site: https://www.stackeleven.com
+- Book a discovery call: https://www.stackeleven.com/intro
+
+## Key pages
+- Landing page: https://lmstackeleven.github.io/WebsitesServices/
