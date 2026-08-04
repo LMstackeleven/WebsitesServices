@@ -4,6 +4,11 @@
 Branding (Brand guidelines, colors, typography)_/
 extracted_text_from_*.md
 
+# Internal notes / audit output — not for publication (.nojekyll would serve these)
+PRODUCT.md
+INFORME-RENDIMIENTO.md
+perf/
+
 # Tooling / editor / skill caches
 .claude/
 .agents/
