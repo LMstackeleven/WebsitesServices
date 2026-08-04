@@ -4,6 +4,22 @@
    Type: Archivo (display + body) · JetBrains Mono (UI / labels)
    ============================================================ */
 
+/* Self-hosted variable fonts (latin subset) — no third-party, no render-block */
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/fonts/archivo.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("assets/fonts/jetbrainsmono.woff2") format("woff2");
+}
+
 :root {
   --navy: #1b293b;
   --navy-900: #131f30;

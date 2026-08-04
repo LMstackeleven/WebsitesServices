@@ -22,12 +22,13 @@
   <meta name="twitter:description" content="Web design for pickleball and padel clubs: site, booking, ads, and CRM, so your courts stay full." />
   <meta name="twitter:image" content="https://lmstackeleven.github.io/WebsitesServices/assets/og-image.png" />
 
+  <!-- Self-hosted fonts: preload early so text paints without a swap-driven shift -->
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/jetbrainsmono.woff2" crossorigin />
+
   <!-- Prioritise the LCP image (first work slide) -->
   <link rel="preload" as="image" href="assets/work-golden.webp" type="image/webp" fetchpriority="high" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
   <script type="application/ld+json">
