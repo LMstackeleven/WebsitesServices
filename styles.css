@@ -132,7 +132,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .mobile-nav { display: none; flex-direction: column; gap: 2px; padding: 12px 20px 22px; background: #fff; border-bottom: 1px solid var(--border); }
 .mobile-nav:not([hidden]) { display: flex; }
-.mobile-nav a { padding: 13px 6px; font-family: var(--mono); font-size: .82rem; color: var(--navy); border-bottom: 1px solid var(--slate-100); }
+.mobile-nav a:not(.btn) { padding: 13px 6px; font-family: var(--mono); font-size: .82rem; color: var(--navy); border-bottom: 1px solid var(--slate-100); }
 .mobile-nav .btn { margin-top: 14px; justify-content: center; }
 
 /* ============================================================
